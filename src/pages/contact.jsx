@@ -3,22 +3,39 @@ import React, { useState } from "react";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", mobile: "", message: "" });
+  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const mailtoLink = `mailto:upcharyogayurved@gmail.com?subject=${encodeURIComponent(
-      "Form Submission"
-    )}&body=${encodeURIComponent(
-      `Name: ${form.name}%0A Mobile: ${form.mobile}%0A Message: ${form.message}`
-    )}`;
+    try {
+      // Make an HTTP POST request to the backend
+      const response = await fetch("http://localhost:8000/submit-form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
 
-    window.location.href = mailtoLink;
+      if (response.ok) {
+        console.log("Form data submitted successfully");
+        alert("Thanks For Reaching US");
+        setSubmitted(true);
+
+        setForm({ name: "", mobile: "", message: "" });
+      } else {
+        console.error("Error submitting form data to backend");
+      }
+    } catch (error) {
+      console.error("An error occurred:", error);
+    }
   };
+
   return (
     <div id="main" className="">
       <div id="contact" className=" bg-[#00000050]">
@@ -50,7 +67,7 @@ export default function Contact() {
             <div>
               <div className="w-full max-w-md mx-auto bg-[]  ">
                 <form
-                  className="bg-white shadow-md border-black border-2  rounded-2xl  px-8 pt-6 pb-6 mb-"
+                  className="bg-[#22ffed] md:bg-slate-200 md:mt-1 mt-10 md:m-1 m-5 w-[full] shadow-md drop-shadow-2xl shadow-2xl rounded-2xl px-8 pt-6 pb-6 mb-"
                   onSubmit={handleSubmit}
                 >
                   <div className="mb-4">
@@ -74,7 +91,6 @@ export default function Contact() {
                     <label
                       className="block text-gray-700 text-sm font-bold mb-2"
                       htmlFor="mobile"
-                      type="num"
                     >
                       Mobile
                     </label>
@@ -107,7 +123,7 @@ export default function Contact() {
                   </div>
                   <div className="flex items-center justify-between">
                     <button
-                      className="bg-[green] hover:bg-[#2c6d2cc9] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                      className="bg-[green] hover:bg-[#54ca54c9] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                       type="submit"
                     >
                       SUBMIT

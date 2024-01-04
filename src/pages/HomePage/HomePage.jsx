@@ -10,30 +10,6 @@ import Contact from "../contact";
 import LoadingScreen from "../LoadingScreen";
 
 const HomePage = () => {
-  const [loading, setLoading] = useState(true);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-  const trackMouse = (event) => {
-    const { clientX, clientY } = event;
-    setMousePosition({ x: clientX, y: clientY });
-  };
-
-  useEffect(() => {
-    document.addEventListener("mousemove", trackMouse);
-
-    setTimeout(() => {
-      setLoading(false);
-    }, 4000);
-
-    return () => {
-      document.removeEventListener("mousemove", trackMouse);
-    };
-  }, []);
-
-  if (loading) {
-    return <LoadingScreen />;
-  }
-
   return (
     <div>
       <Header />

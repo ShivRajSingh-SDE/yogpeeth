@@ -1,0 +1,2 @@
+max-w-[full] mx-auto bg-slate-100 flex justify-center items-center h-[0vh]
+relative md:h-[100vh] max-w-[full] mx-auto h-[100vh] relative md:h-[100vh]

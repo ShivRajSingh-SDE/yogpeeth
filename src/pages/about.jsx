@@ -1,13 +1,15 @@
 import {
   AiOutlineStrikethrough,
-  AiFillMail,
   AiOutlineLinkedin,
   AiFillGithub,
+  AiFillMail,
+  AiFillPhone,
 } from "react-icons/ai";
 import React from "react";
 import mine from "../assets/img/mine.png";
 import mine2 from "../assets/img/mine2.png";
 import chat from "../assets/img/chat.png";
+import { Link } from "react-scroll";
 
 export default function about() {
   return (
@@ -56,14 +58,42 @@ export default function about() {
         </div>
       </div>
 
-      <div className="fixed bottom-10 animate-bounce md:bottom-0 text-[#6c43ff] font-semibold right-0  ">
+      <div className="fixed bottom-10 md:flex hidden animate-bounce md:bottom-0 text-[#6c43ff] font-semibold right-0  ">
         <a
           className="flex flex-row justify-center items-center gap-5 hover:scale-105 ease-in-out duration-200"
-          href="https://wa.me/8800260731"
+          href="https://wa.me/+918800260731"
           target="_blank"
         >
           <img className="md:h-[100px] h-[70px] " src={chat}></img>
         </a>
+      </div>
+
+      <div className="fixed bottom-0 w-full md:hidden  z-50  text-white  md:bottom-0 flex flex-row  font-semibold  justify-between  ">
+        <div className=" bg-[#34e7ff] p-3 ">
+          <a
+            className="flex flex-row justify-center items-center gap-5 hover:scale-105 ease-in-out duration-200"
+            href="https://wa.me/+918240639117"
+            target="_blank"
+          >
+            <div className=" flex justify-center items-center text-[15px]">
+              <AiFillMail className="" />
+              <Link to="main">upcharyogayurved@gmail.com</Link>
+            </div>
+          </a>
+        </div>
+
+        <div className=" bg-[green] p-3">
+          <a
+            className="flex flex-row justify-center items-center gap-5 hover:scale-105 ease-in-out duration-200"
+            href="https://wa.me/+918800260731"
+            target="_blank"
+          >
+            <div className="text-[15px] flex justify-center items-center  ">
+              <AiFillPhone />
+              +918240639117
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   );
