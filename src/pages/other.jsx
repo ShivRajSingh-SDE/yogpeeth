@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineFolder, AiFillGithub, AiOutlineGlobal } from "react-icons/ai";
 import { blog } from "../data";
+import { Link } from "react-scroll";
 
 export default function Other() {
   return (
@@ -32,13 +33,13 @@ export default function Other() {
                 <a href={val.gitlink}>{val.name}</a>
               </h1>
               <div className="flex m-3  flex-col justify-between">
-                <a
+                <Link
                   className="p-2 bg-[green]  text-[white] font-semibold rounded-2xl justify-center
                  items-center flex"
-                  href={val.gitlink}
+                  to={val.gitlink}
                 >
                   ENQUIRE NOW
-                </a>
+                </Link>
               </div>
               <img
                 className="

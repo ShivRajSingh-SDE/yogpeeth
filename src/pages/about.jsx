@@ -68,8 +68,8 @@ export default function about() {
         </a>
       </div>
 
-      <div className="fixed bottom-0 w-full md:hidden  z-50  text-white  md:bottom-0 flex flex-row  font-semibold  justify-between  ">
-        <div className=" bg-[#34e7ff] p-3 ">
+      <div className="fixed bottom-0 w-full md:hidden  z-50  text-white  md:bottom-0 flex flex-row  font-semibold    ">
+        <div className=" bg-[#45ff34cc] w-full p-3 ">
           <a
             className="flex flex-row justify-center items-center gap-5 hover:scale-105 ease-in-out duration-200"
             href="https://wa.me/+918240639117"
@@ -77,20 +77,20 @@ export default function about() {
           >
             <div className=" flex justify-center items-center text-[15px]">
               <AiFillMail className="" />
-              <Link to="main">upcharyogayurved@gmail.com</Link>
+              <Link to="main">Whatsapp Us</Link>
             </div>
           </a>
         </div>
 
-        <div className=" bg-[green] p-3">
+        <div className=" bg-[#98ce98] text-black p-3 w-full">
           <a
             className="flex flex-row justify-center items-center gap-5 hover:scale-105 ease-in-out duration-200"
-            href="https://wa.me/+918800260731"
+            href="tel:+918240639117"
             target="_blank"
           >
             <div className="text-[15px] flex justify-center items-center  ">
               <AiFillPhone />
-              +918240639117
+              Call
             </div>
           </a>
         </div>

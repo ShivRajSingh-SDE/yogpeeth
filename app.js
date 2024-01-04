@@ -37,7 +37,7 @@ const sendFormDataEmail = async (name, mobile, message) => {
   try {
     const mailOptions = {
       from: "bankumoneyhu@gmail.com",
-      to: "shivrajsingh.info.me@gmail.com",
+      to: "upcharyogayurved@gmail.com",
       subject: "Form Submission",
       text: `Hello Owner here is new Client ☀️ \nName: ${name}\nMobile: ${mobile}\nMessage: ${message}`,
     };

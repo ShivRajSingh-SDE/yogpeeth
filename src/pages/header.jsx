@@ -24,15 +24,15 @@ export default function Header() {
     >
       <a
         className="flex flex-row justify-center items-center gap-5  ease-in-out duration-200"
-        href="https://wa.me/+918800260731"
+        href="tel:+918240639117"
         target="_blank"
       >
         <div className=" flex flex-row w-full bg-[#69f845fd] p-1 rounded-xl drop-shadow-2xl font-semibold justify-between md:justify-around">
           <div className="text-[15px] flex justify-center items-center  ">
             <AiFillPhone />
-            +918240639117
+            +91 8240639117
           </div>
-          <div className=" flex justify-center items-center text-[15px]">
+          <div className=" md:flex hidden justify-center items-center text-[15px]">
             <AiFillMail />
             upcharyogayurved@gmail.com
           </div>

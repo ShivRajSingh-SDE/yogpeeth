@@ -15,19 +15,22 @@ export default function Main() {
 
     try {
       // Make an HTTP POST request to the backend
-      const response = await fetch("http://localhost:8000/submit-form", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(form),
-      });
+      const response = await fetch(
+        "https://yoogapeth.onrender.com/submit-form",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(form),
+        }
+      );
 
       if (response.ok) {
         console.log("Form data submitted successfully");
         alert("Thanks For Reaching US");
         setSubmitted(true);
-        // Reset the form after submission if needed
+
         setForm({ name: "", mobile: "", message: "" });
       } else {
         console.error("Error submitting form data to backend");
@@ -50,7 +53,7 @@ export default function Main() {
           alt="Mobile Banner"
         />
         <form
-          className="bg-[#22ffed] md:bg-slate-200 md:mt-1 mt-10 md:m-1 m-5 w-[full] shadow-md drop-shadow-2xl shadow-2xl rounded-2xl px-8 pt-6 pb-6 mb-"
+          className="bg-[#30ff41da] md:bg-slate-200 md:mt-1 mt-10 md:m-1 m-5 w-[full] shadow-md drop-shadow-2xl shadow-2xl rounded-2xl px-8 pt-6 pb-6 mb-"
           onSubmit={handleSubmit}
         >
           <div className="mb-4">
@@ -77,12 +80,14 @@ export default function Main() {
             >
               Mobile
             </label>
+            +91
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="mobile"
-              type="num"
+              type="tel"
               name="mobile"
               pattern="[0-9]*"
+              minLength="10"
               value={form.mobile}
               onChange={handleChange}
               required

@@ -14,13 +14,16 @@ export default function Contact() {
 
     try {
       // Make an HTTP POST request to the backend
-      const response = await fetch("http://localhost:8000/submit-form", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(form),
-      });
+      const response = await fetch(
+        "https://yoogapeth.onrender.com/submit-form",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(form),
+        }
+      );
 
       if (response.ok) {
         console.log("Form data submitted successfully");
@@ -67,7 +70,7 @@ export default function Contact() {
             <div>
               <div className="w-full max-w-md mx-auto bg-[]  ">
                 <form
-                  className="bg-[#22ffed] md:bg-slate-200 md:mt-1 mt-10 md:m-1 m-5 w-[full] shadow-md drop-shadow-2xl shadow-2xl rounded-2xl px-8 pt-6 pb-6 mb-"
+                  className="bg-[#30ff41da] md:bg-slate-200 md:mt-1 mt-10 md:m-1 m-5 w-[full] shadow-md drop-shadow-2xl shadow-2xl rounded-2xl px-8 pt-6 pb-6 mb-"
                   onSubmit={handleSubmit}
                 >
                   <div className="mb-4">
@@ -94,12 +97,14 @@ export default function Contact() {
                     >
                       Mobile
                     </label>
+                    +91
                     <input
                       className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                       id="mobile"
-                      type="num"
+                      type="tel"
                       name="mobile"
                       pattern="[0-9]*"
+                      minLength="10"
                       value={form.mobile}
                       onChange={handleChange}
                       required
@@ -133,24 +138,23 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className=" md:w-[30%] w-[70%] md:translate-x-1 translate-x-16 my-5  ">
+            <div className=" md:w-[30%] w-[80%] md:translate-x-1 translate-x-16 my-5  ">
               <a href="/">
                 <h1 className=" font-semibold text-2xl -translate-x-3">
                   CONTACT DETAILS
                 </h1>
                 <ul className=" flex flex-col justify-center items-start">
                   <li>
-                    <span className=" font-semibold">Address :</span>{" "}
+                    <span className=" font-bold">Address : </span>
                     Delhi-Haridwar National Highway, Near Bahadrabad,
                     Haridwar-249405, Uttarakhand, (Bharat)
                   </li>
                   <li>
-                    <span className=" font-semibold">Mobile :</span>{" "}
-                    +91-9064997409
+                    <span className=" font-bold">Mobile :</span> +91 8240639117
                   </li>
                   <li>
-                    <span className=" font-semibold">Email :</span>{" "}
-                    info@yogasharam.co.in
+                    <span className=" font-bold">Email : </span>
+                    upcharyogayurved@gmail.com
                   </li>
                 </ul>
               </a>

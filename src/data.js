@@ -5,7 +5,7 @@ export const blog = [
     stack: "May. 21, 2021",
     stack2: "React.js, Express.js, MongoDB, Node.js ",
     stack3: "Build your Dream Software & Engineering Career",
-    gitlink: "https://wa.me/+918240639117",
+    gitlink: "main",
     cover: "https://www.yogpeethregistration.com/images/Accommodation.jpg",
   },
   {
@@ -14,7 +14,7 @@ export const blog = [
     stack: "JAN. 18, 2021",
     stack2: "React.js, Express.js, MongoDB, Node.js ",
     stack3: "Build your Dream Software & Engineering Career",
-    gitlink: "https://wa.me/+918240639117",
+    gitlink: "main",
     cover: "https://www.yogpeethregistration.com/images/yoga-therapy.jpg",
   },
 
@@ -23,7 +23,7 @@ export const blog = [
     name: "Yoga",
     stack: "NOV. 18, 2022",
     stack2: "React.js, Express.js, MongoDB, Node.js ",
-    gitlink: "https://wa.me/+918240639117",
+    gitlink: "main",
     cover: "https://www.yogpeethregistration.com/images/yoga.jpg",
   },
   {
@@ -31,7 +31,7 @@ export const blog = [
     name: "Online Booking",
     stack: "DEC. 12, 2020",
     stack2: "React.js, tailwind.css , MUI ",
-    gitlink: "https://wa.me/+918240639117",
+    gitlink: "main",
     cover: "https://www.yogpeethregistration.com/images/online-booking.jpg",
   },
 ];
