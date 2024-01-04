@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5cadc9fa.css",
+    "main.js": "/static/js/main.5e73b9e8.js",
+    "static/media/mine2.png": "/static/media/mine2.8a86bbfd426b352aba39.png",
+    "static/media/Screenshot 2023-10-21 142412.png": "/static/media/Screenshot 2023-10-21 142412.2c8e190352a38c6eef44.png",
+    "static/media/Pramila_Adhar_Back.jpeg": "/static/media/Pramila_Adhar_Back.03dd13b3470438753219.jpeg",
+    "static/media/chatbot.png": "/static/media/chatbot.b1b9a5be5f482f7cf1f8.png",
+    "static/media/Pramila_Adhar_Front.jpeg": "/static/media/Pramila_Adhar_Front.e35f385e9a795b55738f.jpeg",
+    "static/media/QR.png": "/static/media/QR.da28ab897978f52fd70d.png",
+    "static/media/mine.png": "/static/media/mine.3bf5b95f91d19fb99b01.png",
+    "static/media/Ravinder_Pen_Front.jpeg": "/static/media/Ravinder_Pen_Front.0257ff1fcbcab7e88be7.jpeg",
+    "static/media/Ravinder_adhar_back.jpeg": "/static/media/Ravinder_adhar_back.b25a355d7ddec7f67c39.jpeg",
+    "static/media/Mine_PenCard.jpeg": "/static/media/Mine_PenCard.f2c96d528929a2eac353.jpeg",
+    "static/media/Ravinder_adhar_front.jpeg": "/static/media/Ravinder_adhar_front.eaa412a481050c806e23.jpeg",
+    "static/media/Mine_12th_Marksheet.jpeg": "/static/media/Mine_12th_Marksheet.8b2a1529f7051fd5fe95.jpeg",
+    "static/media/Ravinder_pen_back.jpeg": "/static/media/Ravinder_pen_back.c5322d227fdb7e393e3a.jpeg",
+    "static/media/Mine_Passport_Front.jpeg": "/static/media/Mine_Passport_Front.eaecbf3356940d6781c2.jpeg",
+    "static/media/MinePIC.jpeg": "/static/media/MinePIC.2f15daa148666ac7ea2b.jpeg",
+    "static/media/Mine_10th_Marksheet.jpeg": "/static/media/Mine_10th_Marksheet.7f3d210a77291e0ed4b5.jpeg",
+    "static/media/Mine_Adhar_Back.jpeg": "/static/media/Mine_Adhar_Back.1dd00964fdb1f8cf7928.jpeg",
+    "static/media/Mine_Passport_Back.jpeg": "/static/media/Mine_Passport_Back.b7bc2e982b7c38677bfc.jpeg",
+    "static/media/Mine_Adhar_card.jpeg": "/static/media/Mine_Adhar_card.619762d71a9a25dc7e41.jpeg",
+    "static/media/Mine_Adhar_Front.jpeg": "/static/media/Mine_Adhar_Front.fa17318a811b3d5cfe33.jpeg",
+    "static/media/Mine Sign.jpeg": "/static/media/Mine Sign.8f3b4aaeb015bc58daeb.jpeg",
+    "static/media/logo.png": "/static/media/logo.3362abaaec27547e5db0.png",
+    "index.html": "/index.html",
+    "main.5cadc9fa.css.map": "/static/css/main.5cadc9fa.css.map",
+    "main.5e73b9e8.js.map": "/static/js/main.5e73b9e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5cadc9fa.css",
+    "static/js/main.5e73b9e8.js"
+  ]
+}

@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+  
+body{
+
+  background: #ffffff;
+
+  color: black;
+}
+
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.spinner-element {
+
+  
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 5px;
+  animation: spin 1s infinite linear;
+}
+
+
+#main{
+  background-image: url(https://www.yogpeethregistration.com/images/home-banner.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* Add this CSS to your stylesheets */
+.glitter {
+  position: absolute;
+  animation: glitter 1s infinite linear alternate;
+}
+
+@keyframes glitter {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
