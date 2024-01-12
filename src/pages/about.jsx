@@ -52,7 +52,7 @@ export default function about() {
           <div className=" md:w-[49%] ">
             <img
               className=""
-              src="https://www.yogpeethregistration.com/images/about-yogpeeth.jpg"
+              src="https://i.imgur.com/SnIdEBV.jpg"
             ></img>
           </div>
         </div>

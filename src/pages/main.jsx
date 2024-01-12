@@ -16,7 +16,7 @@ export default function Main() {
     try {
       // Make an HTTP POST request to the backend
       const response = await fetch(
-        "https://yoogapeth.onrender.com/submit-form",
+        "https://yogapeth.onrender.com/submit-form",
         {
           method: "POST",
           headers: {
@@ -49,7 +49,7 @@ export default function Main() {
       <div className="w-full max-w-md mx-auto bg-[]">
         <img
           className="md:hidden flex"
-          src="https://www.yogpeethregistration.com/images/mob-banner.jpg"
+          src="https://i.imgur.com/R1rw1Cc.jpg"
           alt="Mobile Banner"
         />
         <form

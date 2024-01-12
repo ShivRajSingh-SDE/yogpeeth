@@ -15,7 +15,7 @@ export default function Contact() {
     try {
       // Make an HTTP POST request to the backend
       const response = await fetch(
-        "https://yoogapeth.onrender.com/submit-form",
+        "https://yogapeth.onrender.com/submit-form",
         {
           method: "POST",
           headers: {

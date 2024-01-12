@@ -6,7 +6,7 @@ export const blog = [
     stack2: "React.js, Express.js, MongoDB, Node.js ",
     stack3: "Build your Dream Software & Engineering Career",
     gitlink: "main",
-    cover: "https://www.yogpeethregistration.com/images/Accommodation.jpg",
+    cover: "https://i.imgur.com/nkHYCgG.jpg",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const blog = [
     stack2: "React.js, Express.js, MongoDB, Node.js ",
     stack3: "Build your Dream Software & Engineering Career",
     gitlink: "main",
-    cover: "https://www.yogpeethregistration.com/images/yoga-therapy.jpg",
+    cover: "https://i.imgur.com/ryzxK3K.jpg",
   },
 
   {
@@ -24,7 +24,7 @@ export const blog = [
     stack: "NOV. 18, 2022",
     stack2: "React.js, Express.js, MongoDB, Node.js ",
     gitlink: "main",
-    cover: "https://www.yogpeethregistration.com/images/yoga.jpg",
+    cover: "https://i.imgur.com/QMnXcwl.jpg",
   },
   {
     id: 4,
@@ -32,16 +32,16 @@ export const blog = [
     stack: "DEC. 12, 2020",
     stack2: "React.js, tailwind.css , MUI ",
     gitlink: "main",
-    cover: "https://www.yogpeethregistration.com/images/online-booking.jpg",
+    cover: "https://i.imgur.com/SMSmxty.jpg",
   },
 ];
 
 export const blog2 = [
   {
-    cer: "https://www.yogpeethregistration.com/images/certificate2.jpg",
+    cer: "https://i.imgur.com/5m6QRky.jpg",
   },
   {
-    cer: "https://www.yogpeethregistration.com/images/certificate1.jpg",
+    cer: "https://i.imgur.com/E7FPX5R.jpg",
   },
 ];
 
